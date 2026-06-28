@@ -1,5 +1,5 @@
-import RevealOnScroll from "@/components/reveal-on-scroll";
-import { PROFILE } from "@/lib/portfolio-data";
+import RevealOnScroll from "@/components/reveal-on-scroll"
+import { PROFILE } from "@/lib/portfolio-data"
 
 export default function ContactSection() {
   return (
@@ -28,5 +28,5 @@ export default function ContactSection() {
         </div>
       </RevealOnScroll>
     </section>
-  );
+  )
 }

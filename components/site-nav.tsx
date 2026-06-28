@@ -1,6 +1,6 @@
-"use client";
+"use client"
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
 
 const LINKS = [
   ["#about", "About"],
@@ -8,17 +8,17 @@ const LINKS = [
   ["#projects", "Projects"],
   ["#skills", "Skills"],
   ["#contact", "Contact"],
-];
+]
 
 export default function SiteNav() {
-  const [scrolled, setScrolled] = useState(false);
-  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false)
+  const [open, setOpen] = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+    const onScroll = () => setScrolled(window.scrollY > 40)
+    window.addEventListener("scroll", onScroll)
+    return () => window.removeEventListener("scroll", onScroll)
+  }, [])
 
   return (
     <nav className={scrolled ? "scrolled" : ""}>
@@ -36,5 +36,5 @@ export default function SiteNav() {
         ☰
       </button>
     </nav>
-  );
+  )
 }
